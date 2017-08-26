@@ -1,0 +1,101 @@
+<parallella housing>
+
+follow this website.
+
+https://github.com/abopen/parallella-open-case
+
+<parallella connection to computer>
+
+follow this website.
+https://www.parallella.org/quick-start/
+
+<making Micro-SD card for parallella>
+
+1. boot a micro-SD card with Parabuntu.
+http://www.parallella.org/create-sdcard/
+
+2. unzip the ubuntu image
+
+3. burn the ubuntu disk image on the micro-SD card
+
+4. follow this step! you must give the board static ip and a gateway to 
+   make it connected to the internet.
+http://www.suzannejmatthews.com/private/SSHParallella.pdf
+
+<connecting by a ethernet cable>
+(I used Window to connect with the parallella board)
+1. Install Putty.
+if you wish to use your computer as a monitor of the board, install xrdp.
+http://c-nergy.be/blog/?p=8952
+
+2. connect it via Remote Desktop Connection.
+(Type in your board's static ip)
+
+3.You can download file from git or internet, or send it by psftp.
+
+
+<downloading parallella-example files>
+1. Use putty or xrdp remote desktop connection.
+You can both do it by git cloning.
+The site is https://github.com/parallella/parallella-examples.git
+
+2. You can try these examples by reading each readme file.
+
+<Epiphany Esdk on Linux Systems>
+Download it here
+http://www.adapteva.com/epiphany-sdk/
+In my board, I installed Epiphany SDK for ARMv7 platform
+latest release is 2016.03
+https://github.com/adapteva/epiphany-sdk/tree/2016.3
+You have to download prerequisites before installing.
+If you get 
+Building tool chain...
+ERROR: Tool chain build for host machine failed.
+There are several methods to fix it.
+1. Prerequisites may not be installed properly. Try again.
+2. follow this site
+https://github.com/adapteva/epiphany-sdk/issues/70
+3. Check if the guile is installed if not
+sudo apt-get install guile-1.8
+4. If doesn't work 
+http://parallella.org/forums/viewtopic.php?f=13&t=184&p=17952&hilit=tool+chain+build+for+host+machine+failed&sid=78499c4df10052228be9f1f8aedf988f#p17952
+or
+http://parallella.org/forums
+
+<Debugging with gdb in Code::Blocks>
+http://nicksparallellaideas.blogspot.com.au/2014/12/debugging-with-gdb-in-codeblocks.html
+
+
+<About Epiphany architecture>
+http://www.adapteva.com/docs/epiphany_arch_ref.pdf
+http://suzannejmatthews.github.io/2015/06/02/epiphany-overview/
+
+<About Epiphany Esdk Api>
+https://github.com/adapteva/epiphany-docs/tree/master/sdk-ref
+ 
+<Parsec benchmark program>
+1. Download it in http://parsec.cs.princeton.edu/
+(I recommand 3.0 version)
+2. Since it is heavy program it might take a while to download it.
+( There is no binary file that is suitable to Epiphany, so just download the whole file and compile it.)
+http://parsec.cs.princeton.edu/parsec3-doc.htm
+
+
+<X264>
+About h.264 
+-Documents are on https://github.com/andr812/parallella-benchmark h264 Document.pdf
+How Parallelization works in x264 encoder
+https://www.axis.com/files/whitepaper/wp_h264_31669_en_0803_lo.pdf
+
+http://upcommons.upc.edu/bitstream/handle/2099.1/23311/101423.pdf?sequence=1
+
+Downloading x264 on offficial site
+1)wget ftp://ftp.videolan.org/pub/x264/snapshots/last_x264.tar.bz2
+tar -xvf last_x264.tar.bz2
+2)http://www.xin.at/x264/index-en.php
+
+<How to program using Epiphany Board>
+http://suzannejmatthews.github.io/2015/06/01/running-our-first-epiphany-program/
+http://suzannejmatthews.github.io/2015/06/03/epiphany-hello-world/
+http://suzannejmatthews.github.io/2015/06/09/dot-product/
+https://github.com/adapteva/epiphany-examples

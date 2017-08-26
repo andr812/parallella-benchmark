@@ -1,0 +1,41 @@
+_Nside ->core
+matmul_internal.ldf
+
+/* multicore (global) space */
+
+
+
+
+00	01	02	03
+0x808   0x809	0x80a	0x80b
+10	11	12	13
+0x848	0x849	0x84a   0x84b
+20	21	22	23
+0x888	0x889	0x88a	0x88b
+30	31 	32	33
+0x8c8	0x8c9	0x8ca	0x8cb
+
+
+e_open(pEpiphany, 0, 0, e_platform.chip[0].rows, e_platform.chip[0].cols)
+
+cpu
+
+g++ -Wall -o fianl matrix_mult.cc
+
+static_buffers
+
+
+rows * cols			
+
+2*4 Core Grid failed
+
+2*2 Core Grid
+
+4*4 Core Grid
+
+
+Single Core
+
+Multi Core
+
+64	128	256	512	
