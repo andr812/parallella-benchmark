@@ -1,9 +1,12 @@
 _Nside ->core
+change these 2 device/src source file
 matmul_internal.ldf
+-memory side 
+matmul.h
+-core size and operand chip size
+
 
 /* multicore (global) space */
-
-
 
 
 00	01	02	03
@@ -27,9 +30,11 @@ static_buffers
 
 rows * cols			
 
-2*4 Core Grid failed
+2*4 Core Grid failed ( not proper access)
 
 2*2 Core Grid
+
+3*3 Core Grid
 
 4*4 Core Grid
 
